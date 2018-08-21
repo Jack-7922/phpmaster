@@ -1,0 +1,4 @@
+# Настройки сервера Apache
+# Указываем файл по умолчанию
+Options Indexes FollowSymLinks
+DirectoryIndex index.php
