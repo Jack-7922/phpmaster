@@ -1,20 +1,11 @@
-<?
-// Создание абстрактного класса
-abstract class HouseAbstract {
-    public $model = "";
-    public $square;
-    public $floors;
+<?php
+abstract class Db {
+    abstract function connect();
+    abstract function close();
+    //...
+}
 
-    function __construct($model, $square = 0, $floors = 1){
-        if(!$model){
-            throw new Exception("Ошибка! Укажите модель");
-            $this->model = $model;
-            $this->square = $square;
-            $this->floors = $floors;
-        }
-
-        function startProgect() {
-            
-        }
-    }
+class A extends Db {
+    function connect() {}
+    function close() {}
 }
